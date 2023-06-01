@@ -84,17 +84,19 @@ boundary(400)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-// const epify = function (stringX, string1 = 'EPICODE') {
-//  resultingStrring = ''
+const epify = function (string) {
+let newString = string.split (' ')
 
-// if (stringX.indexof (string1) === string1.indexOf (string1)) { resultingString = stringX}
-// else {
-// resultingString = string1+''+stringX
-// }
-// console.log (resultingString)
-// }
+if(newString.indexOf ('epicode') === 0 ){
+    console.log (string)
+}
+else{
+    string= 'Epicode' +' '+ string
+    console.log(string);
+}
+}
 
-// epify ('Ciao a tutti')
+epify ('facciamo una Prova')
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
