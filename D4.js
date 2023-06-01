@@ -144,11 +144,13 @@ reverseString ('epicode')
 /* SCRIVI QUI LA TUA RISPOSTA */
 const upperFirst = function (string) {
 
-    let upperFirstString = string.toLowerCase()
-    .split (' ')
-    .map (word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join (' ')
+    let upperFirstString = string.toLowerCase().split(' ')
 
+    for (let i =0; i<upperFirstString.length; i++)
+{
+upperFirstString[i]= upperFirstString[i].charAt(0).toUpperCase() + upperFirstString[i].slice (1)
+}
+upperFirstString = upperFirstString.join(' ')
     console.log (upperFirstString)
 }
 
